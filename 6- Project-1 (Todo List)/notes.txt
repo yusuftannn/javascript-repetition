@@ -1,0 +1,12 @@
+!! ÖNEMLİ !!
+trim()      ->> inputa girilen değerin başına ve sonuna boşluk bırakıldığında yok eder.
+
+//
+İnputa bir değer girirdiğinde tekrar inputta kalmaya devam ediyor.
+Yani her Todo ekledikten input boş kalmalı
+todoInput.value = "";       // inputa istenen yazıldıktan sonra inputun boş olması için
+//
+
+//
+inputa bir şey girilmezken Todo Ekleyin tıklandığında boş olarak ekliyor.
+bunu düzeltmek içinse
