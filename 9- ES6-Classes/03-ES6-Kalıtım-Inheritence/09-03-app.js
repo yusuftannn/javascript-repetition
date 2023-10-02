@@ -51,7 +51,6 @@ class Employee extends Person {     // DerivedClass, SubClass, ChildClass
     }
     raiseSalary(amount){    // Ekstra
         this.salary += amount
-
     }
 }
 const emp = new Employee("Yusuf", 23, 50000)
