@@ -36,7 +36,7 @@
 // ÖRNEK 3
 const langs = ["Python", "Javascript", "C++"]
 
-function addLang(lang,callback) {
+function addLang(lang, callback) {
     setTimeout(function () {
         langs.push(lang)
         console.log("Eklendi")
@@ -46,11 +46,11 @@ function addLang(lang,callback) {
 
 function getAllLangs() {
     setTimeout(function () {
-        langs.forEach(function(lang){
+        langs.forEach(function (lang) {
             console.log(lang)
         })
     }, 1000)
 }
 
-addLang("C#",getAllLangs)
+addLang("C#", getAllLangs)
 // getAllLangs()   // Asenkron Durum

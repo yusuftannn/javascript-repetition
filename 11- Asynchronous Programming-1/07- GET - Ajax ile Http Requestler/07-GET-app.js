@@ -76,17 +76,17 @@ class Request {
     constructor() {
         this.xhr = new XMLHttpRequest()
     }
-    get(url,callback) {
+    get(url, callback) {
         this.xhr.open("GET", url) // Bağlantı açık     
         this.xhr.onload = () => {       // arrow function yaparak hata almadık..
 
             // console.log(this)
             if (this.xhr.status == 200) {
-                callback(null,this.xhr.responseText) // isteğimiz bitti
+                callback(null, this.xhr.responseText) // isteğimiz bitti
             }
-            else{
+            else {
                 // Hata durumu // Status 200(başarılı) olmama dururumu
-                callback("Herhangi bir hata oluştu..!",null)
+                callback("Herhangi bir hata oluştu..!", null)
             }
         }
 
@@ -106,11 +106,11 @@ const request = new Request()
 //     }
 // })
 
-request.get("https://jsonplaceholder.typicode.com/albums/51", function(err,response){
-    if(err === null){
+request.get("https://jsonplaceholder.typicode.com/albums/51", function (err, response) {
+    if (err === null) {
         // Başarılı
         console.log(response)
-    }else{
+    } else {
         // Hata
         console.log(err)
     }

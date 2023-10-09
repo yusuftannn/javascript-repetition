@@ -106,6 +106,6 @@ addTwo(10)
     }).then(response2 => console.log(response2))
     .catch(err => console.log(err))
 
-// NOT: PROMİSE TE CATCH YALNIZCA 1 DEFA KULLANILIR. 
+// NOT: PROMİSE TE CATCH YALNIZCA 1 DEFA KULLANILIR.
 // NOT: ANCAK BİRDEN ÇOK THEN KULLANILABİLİR.
 // NOT: Return yapısıyla ile Promise Chain yapılabilir.

@@ -3,7 +3,7 @@ document.getElementById("change").addEventListener("click", change)
 function change() {
     const xhr = new XMLHttpRequest
 
-    xhr.open("GET","https://api.exchangeratesapi.io/latest")
+    xhr.open("GET", "https://api.exchangeratesapi.io/latest")
 
     xhr.onload = function () {
         if (this.status == 200) {

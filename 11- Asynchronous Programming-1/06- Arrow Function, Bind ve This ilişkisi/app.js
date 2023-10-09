@@ -1,4 +1,4 @@
-
+// Arrow Function, Bind ve This
 
 const person = {
     age: 25,

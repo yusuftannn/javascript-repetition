@@ -4,8 +4,8 @@
 // 404 : Not Found
 // 505 : Internal Server Error
 
-document.getElementById("btn").addEventListener("click",function(){
-    
+document.getElementById("btn").addEventListener("click", function () {
+
     // XMLHttpRequest
 
     const xhr = new XMLHttpRequest()
@@ -14,8 +14,8 @@ document.getElementById("btn").addEventListener("click",function(){
     //     console.log("Process İşleniyor...",this.readyState)
     // }
     // YENİ YÖNTEM
-    xhr.onload = function(){
-        if (this.status === 200){
+    xhr.onload = function () {
+        if (this.status === 200) {
             document.getElementById("ajax").textContent = this.responseText
         }
     }
@@ -28,7 +28,7 @@ document.getElementById("btn").addEventListener("click",function(){
     //     }
 
     // }
-    xhr.open("GET","example.txt",true)
+    xhr.open("GET", "example.txt", true)
 
     xhr.send()
 

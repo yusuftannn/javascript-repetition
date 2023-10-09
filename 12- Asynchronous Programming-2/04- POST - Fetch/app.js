@@ -36,5 +36,5 @@ const request = new Request()
 //     .catch(err => console.log(err))
 
 request.post("https://jsonplaceholder.typicode.com/albums", { userId: 1, title: "Mars" })
-.then(newAlbum => console.log(newAlbum))
-.catch(err => console.log(err))
+    .then(newAlbum => console.log(newAlbum))
+    .catch(err => console.log(err))

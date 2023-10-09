@@ -1,3 +1,4 @@
+// FETCH GET
 class Request {
     get(url) {  // Get Request
 
@@ -18,6 +19,3 @@ request.get("https://jsonplaceholder.typicode.com/albums")
         console.log(albums)
     })
     .catch(err => console.log(err))
-
-
-

@@ -66,10 +66,10 @@ request.post("https://jsonplaceholder.typicode.com/albums", { userId: 1, title: 
 
 // PUT
 request.put("https://jsonplaceholder.typicode.com/albums/10", { userId: 10, title: "Venüs" })
-.then(album => console.log(album))
-.catch(err => console.log(err))
+    .then(album => console.log(album))
+    .catch(err => console.log(err))
 
 // DELETE
 request.delete("https://jsonplaceholder.typicode.com/albums/1")
-.then(message => console.log(message))
-.catch(err => console.log(err))
+    .then(message => console.log(message))
+    .catch(err => console.log(err))
